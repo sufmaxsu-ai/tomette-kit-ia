@@ -1,0 +1,9 @@
+{
+  "name": "tomette-kit",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node skill/tools/validate.mjs",
+    "preview": "node skill/tools/preview.mjs"
+  }
+}

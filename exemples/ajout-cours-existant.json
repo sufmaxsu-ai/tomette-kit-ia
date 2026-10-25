@@ -1,0 +1,85 @@
+{
+  "format": "tomette-pack",
+  "version": 1,
+  "meta": {
+    "title": "Histoire — compléments sur 1789 et l'Empire",
+    "generator": "Exemple Tomette",
+    "createdAt": "2026-01-20",
+    "request": "Ajoute des questions sur 1789 et un chapitre sur Napoléon.",
+    "sources": [
+      {
+        "id": "demo",
+        "label": "Contenu de démonstration Tomette",
+        "type": "text",
+        "note": "Rédigé pour tester toutes les fonctions de l'app (notions de lycée)"
+      }
+    ]
+  },
+  "subjects": [
+    {
+      "id": "hist-2nde",
+      "title": "Histoire",
+      "courses": [
+        {
+          "id": "hist-revolution",
+          "title": "La Révolution française",
+          "items": [
+            {
+              "id": "fc-bastille",
+              "type": "flashcard",
+              "front": "Date de la prise de la Bastille ?",
+              "back": "**14 juillet 1789**, à Paris. La forteresse symbolise l'arbitraire royal.",
+              "source": "demo"
+            },
+            {
+              "id": "fc-jeu-paume",
+              "type": "flashcard",
+              "front": "Que jurent les députés le 20 juin 1789 ?",
+              "back": "De ne pas se séparer avant d'avoir donné une constitution à la France (serment du Jeu de paume).",
+              "source": "demo"
+            }
+          ]
+        },
+        {
+          "id": "hist-empire",
+          "title": "Le Consulat et l'Empire",
+          "summary": "De Bonaparte à Napoléon Ier (1799–1815).",
+          "lessons": [
+            {
+              "id": "cours",
+              "title": "Le Consulat et l'Empire",
+              "body": "# Le Consulat et l'Empire\n\n:::timeline\n- 1799 : coup d'État du 18 brumaire, début du Consulat\n- 21 mars 1804 : promulgation du Code civil\n- 2 décembre 1804 : sacre de Napoléon Ier\n- 18 juin 1815 : défaite de Waterloo\n:::\n\n:::retenir\nLe **Code civil** (1804) garantit l'égalité devant la loi et le droit de propriété.\n:::"
+            }
+          ],
+          "items": [
+            {
+              "id": "fc-sacre",
+              "type": "flashcard",
+              "front": "Date du sacre de Napoléon Ier ?",
+              "back": "2 décembre 1804",
+              "source": "demo"
+            },
+            {
+              "id": "qcm-code",
+              "type": "mcq",
+              "question": "En quelle année le Code civil est-il promulgué ?",
+              "choices": [
+                {
+                  "text": "1804",
+                  "correct": true
+                },
+                {
+                  "text": "1789"
+                },
+                {
+                  "text": "1815"
+                }
+              ],
+              "source": "demo"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

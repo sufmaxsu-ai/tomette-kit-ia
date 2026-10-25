@@ -1,0 +1,6 @@
+Kit Tomette pour IA.
+1. Lire skill/SKILL.md (méthode) et skill/SCHEMA.md (format).
+2. Écrire le fichier pack.json.
+3. node skill/tools/validate.mjs pack.json
+4. node skill/tools/preview.mjs pack.json  (aperçus SVG/PNG des schémas et cartes)
+5. Livrer pack.json (ou un .zip avec pack.json + images/).

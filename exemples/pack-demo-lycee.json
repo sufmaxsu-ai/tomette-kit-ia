@@ -1,0 +1,1403 @@
+{
+  "format": "tomette-pack",
+  "version": 1,
+  "meta": {
+    "title": "Exemple — trois classeurs de lycée",
+    "author": "Tomette",
+    "generator": "Exemple Tomette",
+    "createdAt": "2026-01-15",
+    "language": "fr",
+    "request": "Montrer tous les blocs de cours et tous les types d'exercices.",
+    "sources": [
+      {
+        "id": "demo",
+        "label": "Contenu de démonstration Tomette",
+        "type": "text",
+        "note": "Rédigé pour tester toutes les fonctions de l'app (notions de lycée)"
+      }
+    ]
+  },
+  "subjects": [
+    {
+      "id": "svt-2nde",
+      "title": "SVT",
+      "icon": "leaf",
+      "tone": "success",
+      "level": "Seconde",
+      "description": "Sciences de la vie et de la Terre, classe de Seconde.",
+      "courses": [
+        {
+          "id": "svt-cellule",
+          "title": "La cellule, unité du vivant",
+          "summary": "Organisation de la cellule, procaryotes et eucaryotes, observation au microscope.",
+          "lessons": [
+            {
+              "id": "cours",
+              "title": "La cellule, unité du vivant",
+              "body": "# La cellule, unité du vivant\n\nTous les êtres vivants sont formés d'une ou de plusieurs **cellules**. Certains n'en ont qu'une (bactéries, levures), d'autres en comptent des milliards.\n\n:::definition Cellule\nLa cellule est l'**unité structurale et fonctionnelle** du vivant : la plus petite structure capable de réaliser toutes les fonctions de la vie (se nourrir, se reproduire, échanger avec son milieu).\n:::\n\n## Une découverte progressive\n\n:::timeline\n- 1665 : Robert Hooke observe au microscope de petites « cellules » dans du liège.\n- 1838–1839 : Schleiden (plantes) et Schwann (animaux) proposent que tous les êtres vivants sont faits de cellules.\n- 1855 : Virchow affirme que toute cellule provient d'une autre cellule.\n:::\n\n## L'organisation d'une cellule animale\n\n:::diagram cellule-legendee | Schéma simplifié d'une cellule animale\nToute cellule est délimitée par une **membrane plasmique** qui contient le **cytoplasme**. Chez les eucaryotes, l'ADN est enfermé dans un **noyau**.\n\n:::retenir\n- La **membrane plasmique** sépare la cellule de son milieu et contrôle les échanges.\n- Le **cytoplasme** contient des **organites**, comme les mitochondries.\n- Les **mitochondries** sont le siège de la respiration cellulaire.\n:::\n\n## Procaryotes et eucaryotes\n\n| Caractère | Procaryote | Eucaryote |\n|---|---|---|\n| Noyau | absent | présent |\n| ADN | libre dans le cytoplasme | dans le noyau |\n| Exemples | bactéries | animaux, végétaux, champignons |\n| Taille habituelle | 1 à 10 µm | 10 à 100 µm |\n\n:::attention Une confusion fréquente\nLes cellules végétales ont **en plus** une paroi (cellulose) et, pour les cellules chlorophylliennes, des **chloroplastes**. Elles ont aussi des mitochondries.\n:::\n\n## Observer des cellules au microscope\n\n:::steps Méthode\n- Poser la lame sur la platine, lamelle vers le haut.\n- Commencer avec l'objectif le plus faible.\n- Faire la mise au point avec la vis macrométrique, puis la vis micrométrique.\n- Centrer la zone intéressante, puis passer à l'objectif supérieur.\n:::\n\n:::formule Grossissement\n$$G = G_{\\text{oculaire}} \\times G_{\\text{objectif}}$$\n:::\n\n:::exemple\nAvec un oculaire $\\times 10$ et un objectif $\\times 40$, le grossissement vaut $10 \\times 40 = 400$.\n:::\n\n:::reveal Pourquoi commence-t-on toujours par le plus faible grossissement ?\nLe champ observé est plus large : on repère plus facilement la zone à étudier avant de zoomer.\n:::\n\n:::vocab\nOrganite = structure spécialisée du cytoplasme\nEucaryote = cellule possédant un noyau\nProcaryote = cellule sans noyau\n:::\n\n:::mindmap carte-cellule | Voir la carte mentale du chapitre\n\n:::source demo chapitre « La cellule »",
+              "source": "demo"
+            }
+          ],
+          "diagrams": [
+            {
+              "id": "cellule-legendee",
+              "title": "Cellule animale",
+              "width": 360,
+              "height": 300,
+              "shapes": [
+                {
+                  "type": "ellipse",
+                  "cx": 125,
+                  "cy": 150,
+                  "rx": 110,
+                  "ry": 120,
+                  "fill": "success-soft",
+                  "stroke": "success",
+                  "strokeWidth": 2
+                },
+                {
+                  "type": "circle",
+                  "cx": 110,
+                  "cy": 140,
+                  "r": 40,
+                  "fill": "info-soft",
+                  "stroke": "info",
+                  "strokeWidth": 2
+                },
+                {
+                  "type": "circle",
+                  "cx": 118,
+                  "cy": 132,
+                  "r": 11,
+                  "fill": "info",
+                  "opacity": 0.45,
+                  "stroke": "none"
+                },
+                {
+                  "type": "group",
+                  "x": 178,
+                  "y": 82,
+                  "rotate": -20,
+                  "shapes": [
+                    {
+                      "type": "ellipse",
+                      "cx": 0,
+                      "cy": 0,
+                      "rx": 24,
+                      "ry": 12,
+                      "fill": "accent-soft",
+                      "stroke": "accent"
+                    },
+                    {
+                      "type": "path",
+                      "d": "M-16 0 Q-10 -8 -4 0 T8 0 T18 0",
+                      "stroke": "accent",
+                      "strokeWidth": 1.2
+                    }
+                  ]
+                },
+                {
+                  "type": "group",
+                  "x": 160,
+                  "y": 228,
+                  "rotate": 15,
+                  "shapes": [
+                    {
+                      "type": "ellipse",
+                      "cx": 0,
+                      "cy": 0,
+                      "rx": 22,
+                      "ry": 11,
+                      "fill": "accent-soft",
+                      "stroke": "accent"
+                    },
+                    {
+                      "type": "path",
+                      "d": "M-14 0 Q-9 -7 -3 0 T8 0 T15 0",
+                      "stroke": "accent",
+                      "strokeWidth": 1.2
+                    }
+                  ]
+                },
+                {
+                  "type": "point",
+                  "x": 70,
+                  "y": 220,
+                  "r": 2.5,
+                  "color": "text-2"
+                },
+                {
+                  "type": "point",
+                  "x": 85,
+                  "y": 236,
+                  "r": 2.5,
+                  "color": "text-2"
+                },
+                {
+                  "type": "point",
+                  "x": 60,
+                  "y": 92,
+                  "r": 2.5,
+                  "color": "text-2"
+                },
+                {
+                  "type": "point",
+                  "x": 192,
+                  "y": 150,
+                  "r": 2.5,
+                  "color": "text-2"
+                },
+                {
+                  "type": "point",
+                  "x": 182,
+                  "y": 170,
+                  "r": 2.5,
+                  "color": "text-2"
+                },
+                {
+                  "type": "point",
+                  "x": 96,
+                  "y": 64,
+                  "r": 2.5,
+                  "color": "text-2"
+                },
+                {
+                  "type": "line",
+                  "x1": 198,
+                  "y1": 60,
+                  "x2": 262,
+                  "y2": 40,
+                  "stroke": "text-2",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "line",
+                  "x1": 199,
+                  "y1": 82,
+                  "x2": 262,
+                  "y2": 110,
+                  "stroke": "text-2",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "line",
+                  "x1": 140,
+                  "y1": 150,
+                  "x2": 262,
+                  "y2": 180,
+                  "stroke": "text-2",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "line",
+                  "x1": 120,
+                  "y1": 210,
+                  "x2": 262,
+                  "y2": 250,
+                  "stroke": "text-2",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "text",
+                  "x": 268,
+                  "y": 40,
+                  "text": "Membrane plasmique",
+                  "align": "start",
+                  "size": 13,
+                  "bold": true,
+                  "maxWidth": 90
+                },
+                {
+                  "type": "text",
+                  "x": 268,
+                  "y": 110,
+                  "text": "Mitochondrie",
+                  "align": "start",
+                  "size": 13,
+                  "bold": true,
+                  "maxWidth": 90
+                },
+                {
+                  "type": "text",
+                  "x": 268,
+                  "y": 180,
+                  "text": "Noyau",
+                  "align": "start",
+                  "size": 13,
+                  "bold": true,
+                  "maxWidth": 90
+                },
+                {
+                  "type": "text",
+                  "x": 268,
+                  "y": 250,
+                  "text": "Cytoplasme",
+                  "align": "start",
+                  "size": 13,
+                  "bold": true,
+                  "maxWidth": 90
+                }
+              ]
+            },
+            {
+              "id": "cellule-vierge",
+              "title": "Cellule animale à légender",
+              "width": 360,
+              "height": 300,
+              "shapes": [
+                {
+                  "type": "ellipse",
+                  "cx": 125,
+                  "cy": 150,
+                  "rx": 110,
+                  "ry": 120,
+                  "fill": "success-soft",
+                  "stroke": "success",
+                  "strokeWidth": 2
+                },
+                {
+                  "type": "circle",
+                  "cx": 110,
+                  "cy": 140,
+                  "r": 40,
+                  "fill": "info-soft",
+                  "stroke": "info",
+                  "strokeWidth": 2
+                },
+                {
+                  "type": "circle",
+                  "cx": 118,
+                  "cy": 132,
+                  "r": 11,
+                  "fill": "info",
+                  "opacity": 0.45,
+                  "stroke": "none"
+                },
+                {
+                  "type": "group",
+                  "x": 178,
+                  "y": 82,
+                  "rotate": -20,
+                  "shapes": [
+                    {
+                      "type": "ellipse",
+                      "cx": 0,
+                      "cy": 0,
+                      "rx": 24,
+                      "ry": 12,
+                      "fill": "accent-soft",
+                      "stroke": "accent"
+                    },
+                    {
+                      "type": "path",
+                      "d": "M-16 0 Q-10 -8 -4 0 T8 0 T18 0",
+                      "stroke": "accent",
+                      "strokeWidth": 1.2
+                    }
+                  ]
+                },
+                {
+                  "type": "group",
+                  "x": 160,
+                  "y": 228,
+                  "rotate": 15,
+                  "shapes": [
+                    {
+                      "type": "ellipse",
+                      "cx": 0,
+                      "cy": 0,
+                      "rx": 22,
+                      "ry": 11,
+                      "fill": "accent-soft",
+                      "stroke": "accent"
+                    },
+                    {
+                      "type": "path",
+                      "d": "M-14 0 Q-9 -7 -3 0 T8 0 T15 0",
+                      "stroke": "accent",
+                      "strokeWidth": 1.2
+                    }
+                  ]
+                },
+                {
+                  "type": "point",
+                  "x": 70,
+                  "y": 220,
+                  "r": 2.5,
+                  "color": "text-2"
+                },
+                {
+                  "type": "point",
+                  "x": 85,
+                  "y": 236,
+                  "r": 2.5,
+                  "color": "text-2"
+                },
+                {
+                  "type": "point",
+                  "x": 60,
+                  "y": 92,
+                  "r": 2.5,
+                  "color": "text-2"
+                },
+                {
+                  "type": "point",
+                  "x": 192,
+                  "y": 150,
+                  "r": 2.5,
+                  "color": "text-2"
+                },
+                {
+                  "type": "point",
+                  "x": 182,
+                  "y": 170,
+                  "r": 2.5,
+                  "color": "text-2"
+                },
+                {
+                  "type": "point",
+                  "x": 96,
+                  "y": 64,
+                  "r": 2.5,
+                  "color": "text-2"
+                },
+                {
+                  "type": "line",
+                  "x1": 198,
+                  "y1": 60,
+                  "x2": 262,
+                  "y2": 40,
+                  "stroke": "text-2",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "line",
+                  "x1": 199,
+                  "y1": 82,
+                  "x2": 262,
+                  "y2": 110,
+                  "stroke": "text-2",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "line",
+                  "x1": 140,
+                  "y1": 150,
+                  "x2": 262,
+                  "y2": 180,
+                  "stroke": "text-2",
+                  "strokeWidth": 1
+                },
+                {
+                  "type": "line",
+                  "x1": 120,
+                  "y1": 210,
+                  "x2": 262,
+                  "y2": 250,
+                  "stroke": "text-2",
+                  "strokeWidth": 1
+                }
+              ]
+            }
+          ],
+          "mindmaps": [
+            {
+              "id": "carte-cellule",
+              "title": "La cellule",
+              "layout": "radial",
+              "root": {
+                "text": "La cellule",
+                "children": [
+                  {
+                    "text": "Définition",
+                    "icon": "book-open",
+                    "children": [
+                      {
+                        "text": "Unité structurale"
+                      },
+                      {
+                        "text": "Unité fonctionnelle"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Organisation",
+                    "icon": "microscope",
+                    "children": [
+                      {
+                        "id": "membrane",
+                        "text": "Membrane plasmique"
+                      },
+                      {
+                        "text": "Cytoplasme"
+                      },
+                      {
+                        "id": "noyau",
+                        "text": "Noyau (ADN)"
+                      },
+                      {
+                        "text": "Mitochondries",
+                        "note": "Siège de la respiration cellulaire."
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Deux grands types",
+                    "icon": "dna",
+                    "children": [
+                      {
+                        "text": "Procaryotes",
+                        "children": [
+                          {
+                            "text": "Sans noyau"
+                          },
+                          {
+                            "text": "Bactéries"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "Eucaryotes",
+                        "children": [
+                          {
+                            "text": "Avec noyau"
+                          },
+                          {
+                            "text": "Animaux, végétaux, champignons"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Histoire",
+                    "icon": "scroll",
+                    "children": [
+                      {
+                        "text": "Hooke, 1665"
+                      },
+                      {
+                        "text": "Schleiden et Schwann"
+                      },
+                      {
+                        "text": "Virchow, 1855"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "links": [
+                {
+                  "from": "noyau",
+                  "to": "membrane",
+                  "label": "eucaryotes"
+                }
+              ]
+            }
+          ],
+          "items": [
+            {
+              "id": "fc-def",
+              "type": "flashcard",
+              "front": "Qu'est-ce qu'une cellule ?",
+              "back": "L'unité **structurale et fonctionnelle** du vivant.",
+              "source": "demo"
+            },
+            {
+              "id": "fc-mito",
+              "type": "flashcard",
+              "front": "Rôle des mitochondries ?",
+              "back": "Siège de la **respiration cellulaire**.",
+              "source": "demo"
+            },
+            {
+              "id": "fc-proca",
+              "type": "flashcard",
+              "front": "Différence entre procaryote et eucaryote ?",
+              "back": "Le procaryote n'a **pas de noyau** : son ADN est libre dans le cytoplasme. L'eucaryote possède un noyau.",
+              "source": "demo"
+            },
+            {
+              "id": "fc-gross",
+              "type": "flashcard",
+              "front": "Comment calcule-t-on le grossissement d'un microscope ?",
+              "back": "$G = G_{\\text{oculaire}} \\times G_{\\text{objectif}}$",
+              "source": "demo"
+            },
+            {
+              "id": "fc-hooke",
+              "type": "flashcard",
+              "front": "Qui a observé les premières « cellules », et en quelle année ?",
+              "back": "Robert Hooke, en 1665, dans du liège.",
+              "source": "demo"
+            },
+            {
+              "id": "qcm-noyau",
+              "type": "mcq",
+              "question": "Où se trouve l'ADN d'une cellule eucaryote ?",
+              "choices": [
+                {
+                  "text": "Dans le noyau",
+                  "correct": true
+                },
+                {
+                  "text": "Dans la membrane plasmique",
+                  "explanation": "La membrane délimite la cellule ; elle ne contient pas l'ADN."
+                },
+                {
+                  "text": "Libre dans le cytoplasme",
+                  "explanation": "C'est le cas des procaryotes."
+                },
+                {
+                  "text": "Dans la paroi"
+                }
+              ],
+              "explanation": "Chez les eucaryotes, l'ADN est enfermé dans le noyau.",
+              "source": "demo"
+            },
+            {
+              "id": "qcm-vegetal",
+              "type": "mcq",
+              "question": "Quels éléments trouve-t-on dans une cellule végétale chlorophyllienne ?",
+              "choices": [
+                {
+                  "text": "Des chloroplastes",
+                  "correct": true
+                },
+                {
+                  "text": "Une paroi",
+                  "correct": true
+                },
+                {
+                  "text": "Des mitochondries",
+                  "correct": true
+                },
+                {
+                  "text": "Aucun noyau"
+                }
+              ],
+              "explanation": "C'est une cellule eucaryote : elle a un noyau, des mitochondries, et en plus une paroi et des chloroplastes.",
+              "source": "demo"
+            },
+            {
+              "id": "qcm-taille",
+              "type": "mcq",
+              "question": "Quelle est la taille habituelle d'une cellule eucaryote ?",
+              "choices": [
+                {
+                  "text": "10 à 100 µm",
+                  "correct": true
+                },
+                {
+                  "text": "1 à 10 nm"
+                },
+                {
+                  "text": "1 à 10 mm"
+                }
+              ],
+              "source": "demo"
+            },
+            {
+              "id": "vf-bact",
+              "type": "truefalse",
+              "statement": "Une bactérie possède un noyau.",
+              "answer": false,
+              "correction": "Une bactérie est un **procaryote** : son ADN est libre dans le cytoplasme.",
+              "source": "demo"
+            },
+            {
+              "id": "vf-mito-veg",
+              "type": "truefalse",
+              "statement": "Les cellules végétales possèdent des mitochondries.",
+              "answer": true,
+              "correction": "Elles respirent aussi : elles ont des mitochondries **et** des chloroplastes.",
+              "source": "demo"
+            },
+            {
+              "id": "qr-gross",
+              "type": "quick",
+              "question": "Un élève utilise un oculaire $\\times 10$ et un objectif $\\times 40$. Quel est le grossissement ?",
+              "answer": "$G = 10 \\times 40 = 400$",
+              "lines": 2,
+              "source": "demo"
+            },
+            {
+              "id": "qr-faible",
+              "type": "quick",
+              "question": "Explique pourquoi on commence l'observation au plus faible grossissement.",
+              "answer": "Le champ est plus large : on repère la zone à étudier, puis on augmente le grossissement.",
+              "lines": 3,
+              "source": "demo"
+            },
+            {
+              "id": "ex-compare",
+              "type": "exam",
+              "question": "Compare une cellule animale et une bactérie. Présente ta réponse sous forme organisée.",
+              "points": 4,
+              "lines": 10,
+              "steps": [
+                {
+                  "text": "Points communs : membrane plasmique, cytoplasme, ADN",
+                  "points": 1
+                },
+                {
+                  "text": "La bactérie n'a pas de noyau (procaryote)",
+                  "points": 1
+                },
+                {
+                  "text": "La cellule animale a un noyau et des organites comme les mitochondries (eucaryote)",
+                  "points": 1
+                },
+                {
+                  "text": "Ordre de grandeur des tailles : 1 à 10 µm contre 10 à 100 µm",
+                  "points": 1
+                }
+              ],
+              "answer": "Les deux cellules ont une membrane plasmique, un cytoplasme et de l'ADN. La bactérie est un **procaryote** : pas de noyau, ADN libre. La cellule animale est un **eucaryote** : ADN dans un noyau, présence d'organites. La bactérie est environ dix fois plus petite.",
+              "source": "demo"
+            },
+            {
+              "id": "rc-g",
+              "type": "short",
+              "question": "Oculaire $\\times 15$, objectif $\\times 10$ : quel grossissement ? (nombre seul)",
+              "answers": [
+                "150"
+              ],
+              "tolerance": 0,
+              "source": "demo"
+            },
+            {
+              "id": "as-organites",
+              "type": "match",
+              "prompt": "Associe chaque structure à son rôle.",
+              "pairs": [
+                {
+                  "left": "Membrane plasmique",
+                  "right": "Contrôle les échanges"
+                },
+                {
+                  "left": "Noyau",
+                  "right": "Contient l'ADN"
+                },
+                {
+                  "left": "Mitochondrie",
+                  "right": "Respiration cellulaire"
+                },
+                {
+                  "left": "Chloroplaste",
+                  "right": "Photosynthèse"
+                }
+              ],
+              "decoys": [
+                "Digestion des aliments",
+                "Contraction musculaire"
+              ],
+              "source": "demo"
+            },
+            {
+              "id": "or-micro",
+              "type": "order",
+              "prompt": "Remets les étapes d'une observation au microscope dans l'ordre.",
+              "items": [
+                "Poser la lame sur la platine",
+                "Choisir l'objectif le plus faible",
+                "Mise au point avec la vis macrométrique",
+                "Affiner avec la vis micrométrique",
+                "Passer à l'objectif supérieur"
+              ],
+              "source": "demo"
+            },
+            {
+              "id": "tt-cellule",
+              "type": "cloze",
+              "prompt": "Complète le texte.",
+              "text": "La cellule est délimitée par la {{membrane plasmique}}. Chez les eucaryotes, l'ADN est dans le {{noyau}}. Les {{mitochondries}} sont le siège de la respiration cellulaire.",
+              "decoys": [
+                "paroi",
+                "chloroplastes",
+                "cytoplasme"
+              ],
+              "source": "demo"
+            },
+            {
+              "id": "lg-cellule",
+              "type": "label",
+              "prompt": "Légende le schéma de la cellule animale.",
+              "diagram": "cellule-vierge",
+              "zones": [
+                {
+                  "x": 86,
+                  "y": 13.3,
+                  "answer": "Membrane plasmique"
+                },
+                {
+                  "x": 86,
+                  "y": 36.7,
+                  "answer": "Mitochondrie"
+                },
+                {
+                  "x": 86,
+                  "y": 60,
+                  "answer": "Noyau"
+                },
+                {
+                  "x": 86,
+                  "y": 83.3,
+                  "answer": "Cytoplasme"
+                }
+              ],
+              "decoys": [
+                "Chloroplaste",
+                "Paroi"
+              ],
+              "source": "demo"
+            },
+            {
+              "id": "cl-types",
+              "type": "categorize",
+              "prompt": "Range chaque caractéristique.",
+              "categories": [
+                {
+                  "name": "Procaryote",
+                  "items": [
+                    "Pas de noyau",
+                    "ADN libre dans le cytoplasme",
+                    "Bactérie"
+                  ]
+                },
+                {
+                  "name": "Eucaryote",
+                  "items": [
+                    "Noyau",
+                    "Mitochondries",
+                    "Cellule de feuille"
+                  ]
+                }
+              ],
+              "decoys": [
+                "Pas de membrane"
+              ],
+              "source": "demo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maths-2nde",
+      "title": "Mathématiques",
+      "icon": "sigma",
+      "tone": "info",
+      "level": "Seconde",
+      "description": "Mathématiques, classe de Seconde.",
+      "courses": [
+        {
+          "id": "maths-affines",
+          "title": "Fonctions affines",
+          "summary": "Définition, représentation, coefficient directeur, variation et signe.",
+          "lessons": [
+            {
+              "id": "cours",
+              "title": "Fonctions affines",
+              "body": "# Fonctions affines\n\n:::definition Fonction affine\nUne fonction $f$ définie sur $\\mathbb{R}$ est **affine** s'il existe deux réels $a$ et $b$ tels que, pour tout réel $x$ :\n$$f(x) = ax + b$$\n:::\n\n- $a$ est le **coefficient directeur** ;\n- $b$ est l'**ordonnée à l'origine** : $f(0) = b$.\n\n:::remarque Cas particuliers\nSi $b = 0$, $f(x) = ax$ : la fonction est **linéaire**. Si $a = 0$, $f(x) = b$ : la fonction est **constante**.\n:::\n\n## Représentation graphique\n\n:::propriete\nLa courbe représentative d'une fonction affine est une **droite**. Elle coupe l'axe des ordonnées au point $(0 \\,;\\, b)$.\n:::\n\n:::diagram droites | Les droites de $f(x) = 2x - 1$ et $g(x) = -0{,}5x + 2$\n\n## Calculer le coefficient directeur\n\n:::formule Coefficient directeur\nPour deux réels distincts $x_1$ et $x_2$ :\n$$a = \\frac{f(x_2) - f(x_1)}{x_2 - x_1}$$\n:::\n\n:::methode Retrouver l'expression à partir de deux points\n1. Calculer $a$ avec la formule ci-dessus.\n2. Remplacer $x$ et $f(x)$ par les coordonnées d'un des points pour trouver $b$.\n3. Vérifier avec le second point.\n:::\n\n:::exemple La droite passe par A(1 ; 3) et B(3 ; 7)\n$a = \\dfrac{7 - 3}{3 - 1} = 2$, puis $3 = 2 \\times 1 + b$ donne $b = 1$. Donc $f(x) = 2x + 1$.\n:::\n\n## Sens de variation et signe\n\n| Signe de $a$ | Variation de $f$ |\n|---|---|\n| $a > 0$ | strictement croissante |\n| $a < 0$ | strictement décroissante |\n| $a = 0$ | constante |\n\n:::theoreme Signe de ax + b\nSi $a \\neq 0$, $ax + b$ s'annule en $x = -\\dfrac{b}{a}$ et prend le signe de $a$ à droite de cette valeur.\n:::\n\n:::astuce\nFais varier $a$ et $b$ ci-dessous pour voir la droite bouger.\n:::\n\n:::diagram droite-interactive | Visuel interactif (code isolé)\n\n:::reveal Quelle est la variation de $f(x) = -3x + 5$ ?\n$a = -3 < 0$ : $f$ est strictement décroissante sur $\\mathbb{R}$.\n:::\n\n:::source demo chapitre « Fonctions affines »",
+              "source": "demo"
+            }
+          ],
+          "diagrams": [
+            {
+              "id": "droites",
+              "title": "Deux fonctions affines",
+              "width": 360,
+              "height": 280,
+              "shapes": [
+                {
+                  "type": "axes",
+                  "id": "repere",
+                  "x": 30,
+                  "y": 12,
+                  "w": 310,
+                  "h": 240,
+                  "xmin": -3,
+                  "xmax": 5,
+                  "ymin": -3,
+                  "ymax": 5,
+                  "xlabel": "x",
+                  "ylabel": "y"
+                },
+                {
+                  "type": "plot",
+                  "axes": "repere",
+                  "fn": "2x - 1",
+                  "color": "accent",
+                  "label": "f",
+                  "labelX": 2.6
+                },
+                {
+                  "type": "plot",
+                  "axes": "repere",
+                  "fn": "-0.5x + 2",
+                  "color": "info",
+                  "label": "g",
+                  "labelX": 4.2
+                },
+                {
+                  "type": "point",
+                  "axes": "repere",
+                  "x": 0,
+                  "y": -1,
+                  "label": "(0 ; −1)",
+                  "labelPos": "e"
+                },
+                {
+                  "type": "point",
+                  "axes": "repere",
+                  "x": 1.2,
+                  "y": 1.4,
+                  "label": "I",
+                  "labelPos": "n",
+                  "color": "accent",
+                  "guides": true
+                }
+              ]
+            },
+            {
+              "id": "droite-interactive",
+              "type": "script",
+              "title": "f(x) = ax + b",
+              "width": 360,
+              "height": 260,
+              "interactive": true,
+              "code": "\nvar a = 1, b = 0;\nfunction draw() {\n  api.clear();\n  var ax = api.axes({ xmin: -5, xmax: 5, ymin: -5, ymax: 5, xlabel: 'x', ylabel: 'y' });\n  api.plot(function (x) { return a * x + b; }, ax, { color: 'accent' });\n  api.circle(ax.X(0), ax.Y(b), 4, { fill: 'text-1', stroke: 'none' });\n  var s = 'f(x) = ' + String(a).replace('.', ',') + 'x ' + (b < 0 ? '− ' + String(-b).replace('.', ',') : '+ ' + String(b).replace('.', ','));\n  api.text(s, 60, 24, { size: 15, bold: true, align: 'left' });\n  api.text(a > 0 ? 'croissante' : a < 0 ? 'décroissante' : 'constante', 60, 44, { size: 13, color: 'text-2', align: 'left' });\n}\napi.slider({ label: 'Coefficient directeur a', min: -3, max: 3, step: 0.5, value: 1 }, function (v) { a = v; draw(); });\napi.slider({ label: 'Ordonnée à l\\'origine b', min: -4, max: 4, step: 0.5, value: 0 }, function (v) { b = v; draw(); });\ndraw();\n"
+            }
+          ],
+          "mindmaps": [
+            {
+              "id": "carte-affines",
+              "title": "Fonctions affines",
+              "layout": "tree",
+              "root": {
+                "text": "f(x) = ax + b",
+                "children": [
+                  {
+                    "text": "a : coefficient directeur",
+                    "icon": "trending-up",
+                    "children": [
+                      {
+                        "text": "a > 0 : croissante"
+                      },
+                      {
+                        "text": "a < 0 : décroissante"
+                      },
+                      {
+                        "text": "a = (f(x₂) − f(x₁)) / (x₂ − x₁)"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "b : ordonnée à l'origine",
+                    "icon": "target",
+                    "children": [
+                      {
+                        "text": "f(0) = b"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Courbe : une droite",
+                    "icon": "ruler"
+                  },
+                  {
+                    "text": "Cas particuliers",
+                    "icon": "layers",
+                    "children": [
+                      {
+                        "text": "b = 0 : linéaire"
+                      },
+                      {
+                        "text": "a = 0 : constante"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "items": [
+            {
+              "id": "fc-def",
+              "type": "flashcard",
+              "front": "Forme d'une fonction affine ?",
+              "back": "$f(x) = ax + b$",
+              "source": "demo"
+            },
+            {
+              "id": "fc-coef",
+              "type": "flashcard",
+              "front": "Formule du coefficient directeur",
+              "back": "$a = \\dfrac{f(x_2) - f(x_1)}{x_2 - x_1}$",
+              "source": "demo"
+            },
+            {
+              "id": "fc-var",
+              "type": "flashcard",
+              "front": "Sens de variation d'une fonction affine",
+              "back": "Croissante si $a > 0$, décroissante si $a < 0$, constante si $a = 0$.",
+              "source": "demo"
+            },
+            {
+              "id": "fc-zero",
+              "type": "flashcard",
+              "front": "Où s'annule $ax + b$ (avec $a \\neq 0$) ?",
+              "back": "$x = -\\dfrac{b}{a}$",
+              "source": "demo"
+            },
+            {
+              "id": "qcm-b",
+              "type": "mcq",
+              "question": "Pour $f(x) = 3x - 4$, que vaut l'ordonnée à l'origine ?",
+              "choices": [
+                {
+                  "text": "$-4$",
+                  "correct": true
+                },
+                {
+                  "text": "$3$"
+                },
+                {
+                  "text": "$4$"
+                },
+                {
+                  "text": "$\\dfrac{4}{3}$",
+                  "explanation": "C'est la valeur où $f$ s'annule."
+                }
+              ],
+              "source": "demo"
+            },
+            {
+              "id": "qcm-lin",
+              "type": "mcq",
+              "question": "Lesquelles sont des fonctions linéaires ?",
+              "choices": [
+                {
+                  "text": "$f(x) = 5x$",
+                  "correct": true
+                },
+                {
+                  "text": "$g(x) = -\\dfrac{x}{2}$",
+                  "correct": true
+                },
+                {
+                  "text": "$h(x) = x + 1$"
+                },
+                {
+                  "text": "$k(x) = 7$"
+                }
+              ],
+              "explanation": "Une fonction linéaire s'écrit $ax$ : ordonnée à l'origine nulle.",
+              "source": "demo"
+            },
+            {
+              "id": "vf-dec",
+              "type": "truefalse",
+              "statement": "La fonction $f(x) = -2x + 10$ est croissante.",
+              "answer": false,
+              "correction": "$a = -2 < 0$ : elle est décroissante.",
+              "source": "demo"
+            },
+            {
+              "id": "rc-coef",
+              "type": "short",
+              "question": "Une droite passe par $A(1 \\,;\\, 3)$ et $B(3 \\,;\\, 7)$. Quel est son coefficient directeur ?",
+              "answers": [
+                "2"
+              ],
+              "tolerance": 0,
+              "explanation": "$a = \\dfrac{7-3}{3-1} = 2$",
+              "source": "demo"
+            },
+            {
+              "id": "rc-zero",
+              "type": "short",
+              "question": "Pour quelle valeur de $x$ la fonction $f(x) = 2x - 1$ s'annule-t-elle ? (décimal)",
+              "answers": [
+                "0,5",
+                "1/2",
+                "0.5"
+              ],
+              "tolerance": 0.001,
+              "source": "demo"
+            },
+            {
+              "id": "qr-image",
+              "type": "quick",
+              "question": "Calcule l'image de $-2$ par $f(x) = 3x + 4$.",
+              "answer": "$f(-2) = 3 \\times (-2) + 4 = -2$",
+              "lines": 2,
+              "source": "demo"
+            },
+            {
+              "id": "qr-expr",
+              "type": "quick",
+              "question": "Détermine l'expression de la fonction affine $f$ telle que $f(0) = 2$ et $f(4) = 0$.",
+              "answer": "$b = 2$ et $a = \\dfrac{0 - 2}{4 - 0} = -\\dfrac{1}{2}$, donc $f(x) = -\\dfrac{1}{2}x + 2$.",
+              "lines": 4,
+              "source": "demo"
+            },
+            {
+              "id": "ex-etude",
+              "type": "exam",
+              "context": "On considère la fonction $f$ définie sur $\\mathbb{R}$ par $f(x) = -2x + 6$.",
+              "question": "1. Donne le coefficient directeur et l'ordonnée à l'origine.\n2. Étudie le sens de variation de $f$.\n3. Résous $f(x) = 0$, puis dresse le tableau de signes.",
+              "points": 6,
+              "lines": 12,
+              "duration": 15,
+              "steps": [
+                {
+                  "text": "$a = -2$ et $b = 6$",
+                  "points": 1
+                },
+                {
+                  "text": "$a < 0$ donc $f$ est strictement décroissante",
+                  "points": 1.5
+                },
+                {
+                  "text": "$-2x + 6 = 0 \\iff x = 3$",
+                  "points": 1.5
+                },
+                {
+                  "text": "Tableau : $f(x) > 0$ pour $x < 3$, $f(x) < 0$ pour $x > 3$",
+                  "points": 2
+                }
+              ],
+              "answer": "$a = -2$, $b = 6$. Comme $a < 0$, $f$ est strictement décroissante. $f(x) = 0 \\iff x = 3$. $f$ est positive avant 3, négative après.",
+              "source": "demo"
+            },
+            {
+              "id": "or-methode",
+              "type": "order",
+              "prompt": "Remets dans l'ordre la méthode pour trouver $f(x) = ax + b$ à partir de deux points.",
+              "items": [
+                "Calculer $a$ avec les deux points",
+                "Remplacer les coordonnées d'un point dans $y = ax + b$",
+                "Résoudre pour trouver $b$",
+                "Vérifier avec le second point"
+              ],
+              "source": "demo"
+            },
+            {
+              "id": "as-formes",
+              "type": "match",
+              "prompt": "Associe chaque fonction à sa nature.",
+              "pairs": [
+                {
+                  "left": "$f(x) = 4x$",
+                  "right": "linéaire"
+                },
+                {
+                  "left": "$g(x) = -1$",
+                  "right": "constante"
+                },
+                {
+                  "left": "$h(x) = 2x + 3$",
+                  "right": "affine non linéaire"
+                }
+              ],
+              "decoys": [
+                "du second degré"
+              ],
+              "source": "demo"
+            },
+            {
+              "id": "tt-def",
+              "type": "cloze",
+              "prompt": "Complète la définition.",
+              "text": "Dans $f(x) = ax + b$, $a$ est le {{coefficient directeur}} et $b$ est l'{{ordonnée à l'origine}}. La courbe de $f$ est une {{droite}}.",
+              "decoys": [
+                "parabole",
+                "abscisse"
+              ],
+              "source": "demo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hist-2nde",
+      "title": "Histoire",
+      "icon": "landmark",
+      "tone": "accent",
+      "level": "Seconde",
+      "description": "Histoire, classe de Seconde.",
+      "courses": [
+        {
+          "id": "hist-revolution",
+          "title": "La Révolution française",
+          "summary": "De la monarchie absolue à la République (1789–1799).",
+          "lessons": [
+            {
+              "id": "cours",
+              "title": "La Révolution française",
+              "body": "# La Révolution française (1789–1799)\n\nEn dix ans, la France passe d'une **monarchie absolue** à une **République**. La société d'ordres de l'Ancien Régime disparaît.\n\n## La société d'Ancien Régime\n\n:::columns\n**Les privilégiés**\n- le clergé (premier ordre)\n- la noblesse (deuxième ordre)\n+++\n**Le tiers état**\n- paysans, artisans, bourgeois\n- l'immense majorité de la population\n:::\n\n## Les grandes étapes\n\n:::timeline\n- 5 mai 1789 : ouverture des États généraux à Versailles\n- 20 juin 1789 : serment du Jeu de paume\n- 14 juillet 1789 : prise de la Bastille\n- 4 août 1789 : abolition des privilèges\n- 26 août 1789 : Déclaration des droits de l'homme et du citoyen\n- 21 septembre 1792 : abolition de la royauté, la République est proclamée\n- 21 janvier 1793 : exécution de Louis XVI\n- 27 juillet 1794 : chute de Robespierre (9 thermidor an II)\n- 9 novembre 1799 : coup d'État de Bonaparte (18 brumaire an VIII)\n:::\n\n:::citation Article 1 de la Déclaration de 1789\n« Les hommes naissent et demeurent libres et égaux en droits. »\n:::\n\n:::date 4 août 1789\nDans la nuit du 4 août, l'Assemblée abolit les **privilèges** : la société d'ordres prend fin en droit.\n:::\n\n:::personnage Maximilien de Robespierre\nDéputé montagnard, figure majeure de la Convention et du Comité de salut public pendant la Terreur (1793–1794).\n:::\n\n## Vocabulaire\n\n:::vocab\nPrivilège = droit particulier réservé à un ordre\nTiers état = ordre regroupant tous les non-privilégiés\nSouveraineté nationale = le pouvoir appartient à la nation\nConstitution = texte qui fixe l'organisation des pouvoirs\n:::\n\n:::retenir\nLa Révolution affirme des principes durables : **liberté**, **égalité en droits**, **souveraineté nationale**.\n:::\n\n:::mindmap carte-revolution | Voir la carte mentale\n\n:::source demo chapitre « La Révolution française »",
+              "source": "demo"
+            }
+          ],
+          "mindmaps": [
+            {
+              "id": "carte-revolution",
+              "title": "La Révolution française",
+              "layout": "balanced",
+              "root": {
+                "text": "Révolution française",
+                "children": [
+                  {
+                    "text": "1789",
+                    "icon": "flag",
+                    "children": [
+                      {
+                        "text": "États généraux"
+                      },
+                      {
+                        "text": "Prise de la Bastille"
+                      },
+                      {
+                        "id": "abolition",
+                        "text": "Abolition des privilèges"
+                      },
+                      {
+                        "id": "ddhc",
+                        "text": "DDHC"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Monarchie constitutionnelle",
+                    "icon": "crown",
+                    "children": [
+                      {
+                        "text": "Constitution de 1791"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "République",
+                    "icon": "landmark",
+                    "children": [
+                      {
+                        "text": "Proclamée en septembre 1792"
+                      },
+                      {
+                        "text": "Exécution de Louis XVI"
+                      },
+                      {
+                        "text": "Terreur (1793–1794)"
+                      }
+                    ]
+                  },
+                  {
+                    "text": "Fin de la Révolution",
+                    "icon": "sword",
+                    "children": [
+                      {
+                        "text": "Directoire (1795)"
+                      },
+                      {
+                        "text": "18 brumaire (1799)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "links": [
+                {
+                  "from": "abolition",
+                  "to": "ddhc",
+                  "label": "égalité"
+                }
+              ]
+            }
+          ],
+          "items": [
+            {
+              "id": "fc-bastille",
+              "type": "flashcard",
+              "front": "Date de la prise de la Bastille ?",
+              "back": "14 juillet 1789",
+              "source": "demo"
+            },
+            {
+              "id": "fc-ddhc",
+              "type": "flashcard",
+              "front": "Que dit l'article 1 de la DDHC ?",
+              "back": "« Les hommes naissent et demeurent libres et égaux en droits. »",
+              "source": "demo"
+            },
+            {
+              "id": "fc-ordres",
+              "type": "flashcard",
+              "front": "Quels sont les trois ordres de l'Ancien Régime ?",
+              "back": "Le clergé, la noblesse et le tiers état.",
+              "source": "demo"
+            },
+            {
+              "id": "fc-rep",
+              "type": "flashcard",
+              "front": "Quand la République est-elle proclamée ?",
+              "back": "En septembre 1792 (abolition de la royauté le 21 septembre).",
+              "source": "demo"
+            },
+            {
+              "id": "qcm-privileges",
+              "type": "mcq",
+              "question": "Quel événement met fin aux privilèges ?",
+              "choices": [
+                {
+                  "text": "La nuit du 4 août 1789",
+                  "correct": true
+                },
+                {
+                  "text": "La prise de la Bastille"
+                },
+                {
+                  "text": "Le serment du Jeu de paume"
+                }
+              ],
+              "source": "demo"
+            },
+            {
+              "id": "vf-1793",
+              "type": "truefalse",
+              "statement": "Louis XVI est exécuté en janvier 1793.",
+              "answer": true,
+              "correction": "Le 21 janvier 1793.",
+              "source": "demo"
+            },
+            {
+              "id": "or-chrono",
+              "type": "order",
+              "prompt": "Range ces événements du plus ancien au plus récent.",
+              "items": [
+                "Ouverture des États généraux",
+                "Prise de la Bastille",
+                "Déclaration des droits de l'homme et du citoyen",
+                "Proclamation de la République",
+                "Exécution de Louis XVI",
+                "Coup d'État de Bonaparte"
+              ],
+              "source": "demo"
+            },
+            {
+              "id": "as-dates",
+              "type": "match",
+              "prompt": "Associe chaque date à son événement.",
+              "pairs": [
+                {
+                  "left": "20 juin 1789",
+                  "right": "Serment du Jeu de paume"
+                },
+                {
+                  "left": "26 août 1789",
+                  "right": "DDHC"
+                },
+                {
+                  "left": "27 juillet 1794",
+                  "right": "Chute de Robespierre"
+                },
+                {
+                  "left": "9 novembre 1799",
+                  "right": "18 brumaire"
+                }
+              ],
+              "decoys": [
+                "Sacre de Napoléon"
+              ],
+              "source": "demo"
+            },
+            {
+              "id": "cl-ordres",
+              "type": "categorize",
+              "prompt": "Classe ces groupes sociaux de l'Ancien Régime.",
+              "categories": [
+                {
+                  "name": "Privilégiés",
+                  "items": [
+                    "Clergé",
+                    "Noblesse"
+                  ]
+                },
+                {
+                  "name": "Tiers état",
+                  "items": [
+                    "Paysans",
+                    "Artisans",
+                    "Bourgeois"
+                  ]
+                }
+              ],
+              "decoys": [
+                "Citoyens de la Ve République"
+              ],
+              "source": "demo"
+            },
+            {
+              "id": "tt-ddhc",
+              "type": "cloze",
+              "prompt": "Complète l'article 1 de la Déclaration de 1789.",
+              "text": "« Les hommes naissent et demeurent {{libres}} et {{égaux}} en {{droits}}. »",
+              "decoys": [
+                "riches",
+                "devoirs"
+              ],
+              "source": "demo"
+            },
+            {
+              "id": "rc-annee",
+              "type": "short",
+              "question": "En quelle année la Bastille est-elle prise ?",
+              "answers": [
+                "1789"
+              ],
+              "source": "demo"
+            },
+            {
+              "id": "qr-sens",
+              "type": "quick",
+              "question": "Explique en une phrase ce qu'est la souveraineté nationale.",
+              "answer": "Le pouvoir appartient à la nation, c'est-à-dire à l'ensemble des citoyens, et non plus au roi.",
+              "lines": 3,
+              "source": "demo"
+            },
+            {
+              "id": "ex-ruptures",
+              "type": "exam",
+              "question": "Montre que la Révolution française met fin à l'Ancien Régime. Appuie-toi sur au moins trois événements datés.",
+              "points": 5,
+              "lines": 14,
+              "duration": 20,
+              "steps": [
+                {
+                  "text": "Fin de la société d'ordres : abolition des privilèges (4 août 1789)",
+                  "points": 1.5
+                },
+                {
+                  "text": "Nouveaux principes : DDHC (26 août 1789), égalité en droits, souveraineté nationale",
+                  "points": 1.5
+                },
+                {
+                  "text": "Fin de la monarchie : République proclamée (septembre 1792), exécution du roi (janvier 1793)",
+                  "points": 1.5
+                },
+                {
+                  "text": "Réponse organisée, avec une introduction et une conclusion",
+                  "points": 0.5
+                }
+              ],
+              "answer": "La Révolution détruit la **société d'ordres** (4 août 1789), affirme de **nouveaux principes** (DDHC, 26 août 1789) et met fin à la **monarchie** (République en septembre 1792, exécution de Louis XVI le 21 janvier 1793).",
+              "source": "demo"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
